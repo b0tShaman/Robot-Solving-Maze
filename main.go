@@ -178,9 +178,14 @@ func main() {
 		}
 	}
 
-	route := routes[Target]
+	route, ok := routes[Target]
+	if !ok{
+		printGrid(0, 0)
+		fmt.Println("NO PATH FOUND TO TARGET")
+		return
+	}
+
 	route = append(route, fmt.Sprintf("%d_%d", Target.x, Target.y))
-	fmt.Println(route)
 
 	for _, c := range route {
 		parts := strings.Split(c, "_")
