@@ -9,9 +9,11 @@ Robot-Solving-Maze is a Go application that simulates a robot navigating through
 - Constructs a graph representation of the grid.
 - Uses Dijkstra's algorithm to find the shortest path.
 - Visualizes the robot's movement in the terminal.
+- Allows customization of grid size, target position, and obstacle placement
 
 ## Prerequisites
 - Go 1.18 or later installed on your system.
+- Visual Studio Code to view animation
 
 ## Installation
 1. Clone the repository:
